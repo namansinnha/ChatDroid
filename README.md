@@ -1,0 +1,2 @@
+# ChatDroid
+This app is basically a chating application, where you can chat with your friends and others. You'll have to search your friend and then send him/her a request to which they will accept and then you both are will have a chat room availabe in which you can share your views, memories by sending images, docs and much more. You will also have a group section in which anyone is allowed to share there views and have a public talk. all the groups are public so anyone can talk to literally anyone. So that's my Chat Application.
