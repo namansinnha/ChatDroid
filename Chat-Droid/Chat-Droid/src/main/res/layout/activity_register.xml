@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Activities.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/register_logo"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@android:color/transparent"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="register.json"
+                app:lottie_loop="false" />
+
+            <com.github.florent37.materialtextfield.MaterialTextField
+                android:id="@+id/register_email_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_logo"
+                android:layout_margin="16dp"
+                android:padding="16dp"
+                app:mtf_backgroundColor="@color/lightestColor"
+                app:mtf_image="@drawable/ic_gmail"
+                app:mtf_labelColor="@color/darkestColor"
+                app:mtf_openKeyboardOnFocus="true">
+
+                <EditText
+                    android:id="@+id/register_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittexts_background"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:hint="@string/email_id"
+                    android:inputType="textEmailAddress"
+                    android:textSize="15sp" />
+
+            </com.github.florent37.materialtextfield.MaterialTextField>
+
+            <com.github.florent37.materialtextfield.MaterialTextField
+                android:id="@+id/register_password_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_email_layout"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:padding="16dp"
+                app:mtf_backgroundColor="#c7e5bf"
+                app:mtf_image="@drawable/ic_password"
+                app:mtf_labelColor="@color/darkestColor">
+
+                <EditText
+                    android:id="@+id/register_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittexts_background"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:textSize="15sp" />
+
+            </com.github.florent37.materialtextfield.MaterialTextField>
+
+            <Button
+                android:id="@+id/register_btn"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_password_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/buttons_background"
+                android:fontFamily="@font/ubuntu_regular"
+                android:text="@string/register"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/signIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/register_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/forgot_password_buttons_background"
+                android:fontFamily="@font/ubuntu_regular"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/sign_in_already_have_an_account"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

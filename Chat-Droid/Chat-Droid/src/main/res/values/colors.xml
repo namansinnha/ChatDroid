@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00a038</color>
+    <color name="colorPrimaryDark">#00a038</color>
+    <color name="colorAccent">#FFE1FCEA</color>
+    <color name="white">#fff</color>
+    <color name="lightestColor">#c7e5bf</color>
+    <color name="darkestColor">#007004</color>
+
+    <color name="aachaGreenColor">#FFE1FCEA</color>
+    <color name="aachaRedColor">#FFFCB9B7</color>
+    <color name="aachaDarkRedColor">#FFFF0400</color>
+    <color name="aacahaDarkGreenColor">#FF0B8B42</color>
+</resources>

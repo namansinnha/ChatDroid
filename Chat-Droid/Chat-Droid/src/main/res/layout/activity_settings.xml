@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activities.SettingsActivity">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_back"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/set_profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_profile"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"/>
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:id="@+id/set_username_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/set_profile_image"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        app:mtf_backgroundColor="@color/lightestColor"
+        app:mtf_image="@drawable/ic_edit_profile"
+        app:mtf_labelColor="@color/darkestColor"
+        app:mtf_openKeyboardOnFocus="true">
+
+        <EditText
+            android:id="@+id/set_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittexts_background"
+            android:fontFamily="@font/ubuntu_regular"
+            android:inputType="textMultiLine"
+            android:hint="@string/fullname"
+            android:textSize="15sp" />
+
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:id="@+id/set_profile_status_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/set_username_layout"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:padding="16dp"
+        app:mtf_backgroundColor="@color/lightestColor"
+        app:mtf_image="@drawable/ic_edit_status"
+        app:mtf_labelColor="@color/darkestColor"
+        app:mtf_openKeyboardOnFocus="true">
+
+        <EditText
+            android:id="@+id/set_profile_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittexts_background"
+            android:fontFamily="@font/ubuntu_regular"
+            android:inputType="textMultiLine"
+            android:hint="@string/status"
+            android:textSize="15sp" />
+
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+    <Button
+        android:id="@+id/setting_btn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/set_profile_status_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/buttons_background"
+        android:fontFamily="@font/ubuntu_regular"
+        android:text="@string/update"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</RelativeLayout>

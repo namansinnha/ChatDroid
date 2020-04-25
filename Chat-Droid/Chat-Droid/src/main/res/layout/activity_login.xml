@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Activities.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/login_logo"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@android:color/transparent"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="whatsapp.json"
+                app:lottie_loop="false" />
+
+            <com.github.florent37.materialtextfield.MaterialTextField
+                android:id="@+id/login_email_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_logo"
+                android:layout_margin="16dp"
+                android:padding="16dp"
+                app:mtf_backgroundColor="@color/lightestColor"
+                app:mtf_image="@drawable/ic_gmail"
+                app:mtf_labelColor="@color/darkestColor"
+                app:mtf_openKeyboardOnFocus="true">
+
+                <EditText
+                    android:id="@+id/login_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittexts_background"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:hint="@string/email_id"
+                    android:inputType="textEmailAddress"
+                    android:textSize="15sp" />
+
+            </com.github.florent37.materialtextfield.MaterialTextField>
+
+            <com.github.florent37.materialtextfield.MaterialTextField
+                android:id="@+id/login_password_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_email_layout"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:padding="16dp"
+                app:mtf_backgroundColor="#c7e5bf"
+                app:mtf_image="@drawable/ic_password"
+                app:mtf_labelColor="@color/darkestColor">
+
+                <EditText
+                    android:id="@+id/login_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittexts_background"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:textSize="15sp" />
+
+            </com.github.florent37.materialtextfield.MaterialTextField>
+
+            <Button
+                android:id="@+id/login_forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_password_layout"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/forgot_password_buttons_background"
+                android:fontFamily="@font/ubuntu_regular"
+                android:padding="5dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/forgot_password"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_forgot_password"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/buttons_background"
+                android:fontFamily="@font/ubuntu_regular"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/signUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/forgot_password_buttons_background"
+                android:fontFamily="@font/ubuntu_regular"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/sign_up_to_create_new_account"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!--            <View-->
+            <!--                android:id="@+id/view_separator"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="1dp"-->
+            <!--                android:layout_below="@+id/signUp"-->
+            <!--                android:layout_marginStart="15dp"-->
+            <!--                android:layout_marginTop="16dp"-->
+            <!--                android:layout_marginEnd="16dp"-->
+            <!--                android:background="@color/lightestColor" />-->
+
+            <!--            <LinearLayout-->
+            <!--                android:id="@+id/phone_login_layout"-->
+            <!--                android:layout_below="@id/view_separator"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="horizontal"-->
+            <!--                android:gravity="center"-->
+            <!--                android:layout_centerHorizontal="true"-->
+            <!--                android:layout_marginStart="16dp"-->
+            <!--                android:layout_marginEnd="16dp"-->
+            <!--                android:layout_marginTop="16dp"-->
+            <!--                android:layout_marginBottom="24dp"-->
+            <!--                android:padding="16dp">-->
+
+            <!--                <ImageView-->
+            <!--                    android:layout_width="50dp"-->
+            <!--                    android:layout_height="50dp"-->
+            <!--                    android:src="@drawable/ic_smartphone"/>-->
+
+            <!--&lt;!&ndash;                <Button&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:id="@+id/login_via_phone"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:layout_height="50dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:layout_marginEnd="16dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:background="@drawable/forgot_password_buttons_background"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:fontFamily="@font/ubuntu_regular"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:paddingStart="8dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:layout_gravity="center"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:paddingEnd="8dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:text="@string/login_with_phone"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:textColor="@color/colorPrimaryDark"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:textSize="18sp"&ndash;&gt;-->
+            <!--&lt;!&ndash;                    android:textStyle="bold" />&ndash;&gt;-->
+
+            <!--            </LinearLayout>-->
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
